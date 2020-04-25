@@ -1,15 +1,9 @@
-<script src="{{ url('backend/vendor/jquery/jquery.min.js')}}"></script>
-  <script src="{{ url('backend/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-
-  <!-- Core plugin JavaScript-->
-  <script src="{{ url('backend/vendor/jquery-easing/jquery.easing.min.js')}}"></script>
-
-  <!-- Custom scripts for all pages-->
-  <script src="{{ url('backend/js/sb-admin-2.min.js')}}"></script>
-
-  <!-- Page level plugins -->
-  <script src="{{ url('backend/vendor/chart.js/Chart.min.js')}}"></script>
-
-  <!-- Page level custom scripts -->
-  <script src="{{ url('backend/js/demo/chart-area-demo.js')}}"></script>
-  <script src="{{ url('backend/js/demo/chart-pie-demo.js')}}"></script>{{ url('backend/
+<script src="{{ url('backend/code.jquery.com/jquery-3.4.1.min.js') }}" crossorigin="anonymous"></script>
+<script src="{{ url('backend/stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
+<script src="{{ url('backend/js/scripts.js') }}"></script>
+<script src="{{ url('backend/cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js') }}" crossorigin="anonymous"></script>
+<script src="{{ url('backend/assets/demo/chart-area-demo.js') }}"></script>
+<script src="{{ url('backend/assets/demo/chart-bar-demo.js') }}"></script>
+<script src="{{url('frontend/sass/dist/sass.js')}}"></script>
+<script src="{{ url('backend/js/sb-customizer.js') }}"></script>
+<sb-customizer project="sb-admin-pro"></sb-customizer>

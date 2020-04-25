@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/jajal', 'AdminproController@index')->name('jajal');
 
 
 Route::prefix('admin')
