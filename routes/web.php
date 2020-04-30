@@ -15,7 +15,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index')->name('home');
-Route::get('/jajal', 'AdminproController@index')->name('jajal');
 
 
 Route::prefix('admin')
@@ -23,6 +22,9 @@ Route::prefix('admin')
   ->middleware(['auth', 'admin'])
   ->group(function () {
     Route::get('/', 'DashboardController@index')->name('dashboard');
+    Route::resource('pendaftar', 'PendaftarController');
+    Route::resource('jurusan', 'JurusanController');
+    Route::resource('eskul', 'EskulController');
   });
 
 Auth::routes();

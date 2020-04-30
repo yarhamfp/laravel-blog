@@ -9,7 +9,9 @@
         <meta name="description" content />
         <meta name="author" content />
         <title>Dashboard - SB Admin Pro</title>
+        @stack('addon-style')
         @include('includes.admin.style')
+        @stack('prepend-style')
     </head>
     <body class="nav-fixed">
         @include('includes.admin.navbar')
@@ -24,7 +26,9 @@
                 @include('includes.admin.footer')
             </div>
         </div>
+        @stack('addon-sctipt')
         @include('includes.admin.script')
+        @stack('prepend-script')
     </body>
 
 <!-- Mirrored from themes.startbootstrap.com/sb-admin-pro/dashboard-3.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 23 Apr 2020 16:29:29 GMT -->

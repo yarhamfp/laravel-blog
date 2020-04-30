@@ -1,5 +1,5 @@
 <nav class="topnav navbar navbar-expand shadow navbar-light bg-white" id="sidenavAccordion">
-    <a class="navbar-brand d-none d-sm-block" href="index-2.html">BakeBlog</a><button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle" href="#"><i data-feather="menu"></i></button>
+    <a class="navbar-brand d-none d-sm-block" href="{{route('dashboard')}}">PPDB ONLINE</a><button class="btn btn-icon btn-transparent-dark order-1 order-lg-0 mr-lg-2" id="sidebarToggle" href="#"><i data-feather="menu"></i></button>
     <form class="form-inline mr-auto d-none d-lg-block"><input class="form-control form-control-solid mr-sm-2" type="search" placeholder="Search" aria-label="Search" /></form>
     <ul class="navbar-nav align-items-center ml-auto">
         <li class="nav-item dropdown no-caret mr-3 dropdown-notifications">
@@ -58,8 +58,8 @@
                 <h6 class="dropdown-header d-flex align-items-center">
                     <img class="dropdown-user-img" src="{{url('backend/assets/img/yarham.png')}}" />
                     <div class="dropdown-user-details">
-                        <div class="dropdown-user-details-name">Yarham Fitrohiman Pahlawi</div>
-                        <div class="dropdown-user-details-email">yarhamfp@gmail.com</div>
+                        <div class="dropdown-user-details-name">{{Auth::user()->name}}</div>
+                        <div class="dropdown-user-details-email">{{Auth::user()->email}}</div>
                     </div>
                 </h6>
                 <div class="dropdown-divider"></div>

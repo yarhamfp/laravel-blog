@@ -7,7 +7,11 @@
     <div class="d-flex justify-content-between align-items-sm-center flex-column flex-sm-row mb-4">
         <div class="mr-4 mb-3 mb-sm-0">
             <h1 class="mb-0">Dashboard</h1>
-            <div class="small"><span class="font-weight-500 text-primary">Friday</span> &#xB7; September 20, 2020 &#xB7; 12:16 PM</div>
+            @php
+                date_default_timezone_set('Asia/Jakarta');
+                $waktuSekarang = date('d-m-Y H:i:s');
+            @endphp
+            <div class="small"><span class="font-weight-500 text-primary">{{ Carbon\Carbon::create($waktuSekarang)->format('l')}}</span> &#xB7; {{ Carbon\Carbon::create($waktuSekarang)->format('d F, Y'.' .'.' h:i A')}}</div>
         </div>
         <div class="dropdown">
             <a class="btn btn-white btn-sm font-weight-500 line-height-normal p-3 dropdown-toggle" id="dropdownMenuLink" href="#" role="button" data-toggle="dropdown" data-display="static" aria-haspopup="true" aria-expanded="false"><i class="text-primary mr-2" data-feather="calendar"></i>Jan - Feb 2020</a>
@@ -132,3 +136,9 @@
     </div>
 </div>
 @endsection
+
+@push('prepend-script')
+<script src="{{ url('backend/cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js') }}" crossorigin="anonymous"></script>
+<script src="{{ url('backend/assets/demo/chart-area-demo.js') }}"></script>
+<script src="{{ url('backend/assets/demo/chart-bar-demo.js') }}"></script>
+@endpush
