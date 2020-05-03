@@ -3,7 +3,9 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Model\Eskul;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
 class EskulController extends Controller
 {
@@ -14,7 +16,10 @@ class EskulController extends Controller
      */
     public function index()
     {
-        //
+        $items = Eskul::all();
+        return view('pages.admin.eskul.index', [
+            'items' => $items
+        ]);
     }
 
     /**
@@ -35,7 +40,14 @@ class EskulController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'eskul' => "required|unique:eskul"
+        ]);
+        $data = $request->all();
+        $data['slug'] = Str::slug($request->eskul);
+        Eskul::create($data);
+
+        return redirect()->back()->with('sukses', 'Data berhasil disimpan');
     }
 
     /**
@@ -80,6 +92,9 @@ class EskulController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $item = Eskul::findOrFail($id);
+        $item->delete();
+
+        return redirect()->back()->with('sukses', 'Data eskul berhasil dihapus');
     }
 }

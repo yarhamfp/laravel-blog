@@ -6,7 +6,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Eskul extends Model
 {
-    protected $fillable = ['eskul'];
+    protected $table = 'eskul';
+    protected $fillable = ['eskul', 'slug'];
 
     public function pendaftaran()
     {

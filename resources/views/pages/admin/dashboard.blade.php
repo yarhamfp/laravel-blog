@@ -68,8 +68,8 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="flex-grow-1">
-                            <div class="small font-weight-bold text-green mb-1">Clicks</div>
-                            <div class="h5">11,291</div>
+                            <div class="small font-weight-bold text-green mb-1">Jurusan</div>
+                            <div class="h5">{{App\Model\Jurusan::count()}}</div>
                             <div class="text-xs font-weight-bold text-success d-inline-flex align-items-center"><i class="mr-1" data-feather="trending-up"></i>12%</div>
                         </div>
                         <div class="ml-2"><i class="fas fa-mouse-pointer fa-2x text-gray-200"></i></div>
@@ -82,8 +82,8 @@
                 <div class="card-body">
                     <div class="d-flex align-items-center">
                         <div class="flex-grow-1">
-                            <div class="small font-weight-bold text-yellow mb-1">Conversion rate</div>
-                            <div class="h5">1.23%</div>
+                            <div class="small font-weight-bold text-yellow mb-1">Exstrakulikuler</div>
+                            <div class="h5">{{App\Model\Eskul::count()}}</div>
                             <div class="text-xs font-weight-bold text-danger d-inline-flex align-items-center"><i class="mr-1" data-feather="trending-down"></i>1%</div>
                         </div>
                         <div class="ml-2"><i class="fas fa-percentage fa-2x text-gray-200"></i></div>

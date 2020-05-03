@@ -1,20 +1,12 @@
-<link href="https://fonts.googleapis.com/css?family=B612+Mono|Cabin:400,700&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,400,500,600,700,800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="{{ url('frontend/fonts/icomoon/style.css')}}" />
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-<link rel="stylesheet" href="{{ url('frontend/css/bootstrap.min.css')}}" />
-<link rel="stylesheet" href="{{ url('frontend/css/jquery-ui.css')}}" />
-<link rel="stylesheet" href="{{ url('frontend/css/owl.carousel.min.css')}}" />
-<link rel="stylesheet" href="{{ url('frontend/css/owl.theme.default.min.css')}}" />
-<link rel="stylesheet" href="{{ url('frontend/css/owl.theme.default.min.css')}}" />
+<link rel="stylesheet" href="{{ url('frontend/css/animate.css') }}">
 
-<link rel="stylesheet" href="{{ url('frontend/css/jquery.fancybox.min.css')}}" />
+<link rel="stylesheet" href="{{ url('frontend/css/owl.carousel.min.css') }}">
+<link rel="stylesheet" href="{{ url('frontend/css/owl.theme.default.min.css') }}">
+<link rel="stylesheet" href="{{ url('frontend/css/magnific-popup.css') }}">
 
-<link rel="stylesheet" href="{{ url('frontend/css/bootstrap-datepicker.css')}}" />
-
-<link rel="stylesheet" href="{{ url('frontend/fonts/flaticon/font/flaticon.css')}}" />
-
-<link rel="stylesheet" href="{{ url('frontend/css/aos.css')}}" />
-<link href="{{ url('frontend/css/jquery.mb.YTPlayer.min.css')}}" media="all" rel="stylesheet" type="text/css" />
-
-<link rel="stylesheet" href="{{ url('frontend/css/style.css')}}" />
+<link rel="stylesheet" href="{{ url('frontend/css/flaticon.css') }}">
+<link rel="stylesheet" href="{{ url('frontend/css/style.css') }}">

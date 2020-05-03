@@ -1,6 +1,6 @@
 	/*
   	Flaticon icon font: Flaticon
-  	Creation date: 20/06/2019 00:33
+  	Creation date: 31/03/2020 00:54
   	*/
 
 @font-face {
@@ -25,25 +25,16 @@
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
 [class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
   font-family: Flaticon;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  line-height: 1;
-  text-decoration: inherit;
-  text-rendering: optimizeLegibility;
-  text-transform: none;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  font-smoothing: antialiased;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
 }
 
-.flaticon-placeholder:before { content: "\f100"; }
-.flaticon-call:before { content: "\f101"; }
-.flaticon-email:before { content: "\f102"; }
-.flaticon-oil-platform:before { content: "\f103"; }
-.flaticon-idea:before { content: "\f104"; }
-.flaticon-engineer:before { content: "\f105"; }
-.flaticon-crane:before { content: "\f106"; }
-.flaticon-plumb-bob:before { content: "\f107"; }
-.flaticon-compass:before { content: "\f108"; }
-.flaticon-planning:before { content: "\f109"; }
+.flaticon-accountant:before { content: "\f100"; }
+.flaticon-accounting:before { content: "\f101"; }
+.flaticon-tax:before { content: "\f102"; }
+.flaticon-wealth:before { content: "\f103"; }
+.flaticon-accounting-1:before { content: "\f104"; }
+.flaticon-loan:before { content: "\f105"; }
+.flaticon-teamwork:before { content: "\f106"; }
+.flaticon-budget:before { content: "\f107"; }

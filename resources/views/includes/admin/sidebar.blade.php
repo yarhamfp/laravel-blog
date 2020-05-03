@@ -41,7 +41,7 @@
                     </div>
                     Jurusan
                 </a>
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{route('eskul.index')}}">
                     <div class="nav-link-icon">
                         <i class="fas fa-bell"></i>
                     </div>

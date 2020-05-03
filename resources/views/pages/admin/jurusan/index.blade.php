@@ -54,14 +54,14 @@
                     <thead>
                         <tr>
                             <th>ID</th>
-                            <th>Position</th>
+                            <th>Jurusan</th>
                             <th>Actions</th>
                         </tr>
                     </thead>
                     <tfoot>
                         <tr>
                             <th>ID</th>
-                            <th>Position</th>
+                            <th>Jurusan</th>
                             <th>Actions</th>
                         </tr>
                     </tfoot>
